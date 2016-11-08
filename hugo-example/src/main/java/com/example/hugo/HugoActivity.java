@@ -61,16 +61,15 @@ public class HugoActivity extends Activity {
     }, "I'm a lazy thr.. bah! whatever!").start();
   }
 
+  @DebugLog
   static class Greeter {
     private final String name;
 
-    @DebugLog
     Greeter(String name) {
       this.name = name;
     }
 
-    @DebugLog
-    public String sayHello() {
+    private String sayHello() {
       return "Hello, " + name;
     }
   }
@@ -79,7 +78,7 @@ public class HugoActivity extends Activity {
   static class Charmer {
     private final String name;
 
-    Charmer(String name) {
+    private Charmer(String name) {
       this.name = name;
     }
 
